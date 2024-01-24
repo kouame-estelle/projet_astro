@@ -1,0 +1,59 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<!doctype html>
+<html lang="en">
+	<head>
+<BaseHead title={`${SITE_TITLE} - Contact`} description={`${SITE_DESCRIPTION} - Contact`} />
+</head>
+<body class="bg-gray-100 ffont-sans">
+<Header title={SITE_TITLE} />
+<main class="container mx-auto max-w-screen-xl pt-20">
+<div class="isolate  px-6 py-24 sm:py-32 lg:px-8">
+  <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+    <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 bg-zhite">
+    <div class="shadow-lg pl-8">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Contactez-nous</h1>
+      <p class="text-lg mb-6">N'hésitez pas à nous contacter pour toute question ou commentaire.</p>
+
+      <div class="mb-8">
+        <p class="text-lg font-semibold">Informations de contact :</p>
+        <p>COMPANY_NAME</p>
+        <p>COMPANY_ADDRESS</p>
+        <p>Tél : COMPANY_PHONE</p>
+        <p>Email : COMPANY_EMAIL</p>
+      </div>
+    </div>
+    <div>
+      <form class="bg-white shadow-lg rounded-lg pt-8 pb-8 pl-8 pr-8" >
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-black-700">Nom:</label>
+          <input type="text" id="name" name="name" class="mt-1 p-2 w-full border bg-gray-100 rounded-md">
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-black-700">Email:</label>
+          <input type="email" id="email" name="email" class="mt-1 p-2 w-full border  bg-gray-100 rounded-md">
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium text-black-700">Message:</label>
+          <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border bg-gray-100 rounded-md"></textarea>
+        </div>
+
+        <button type="submit" class="px-4 py-2 bg-indigo-700 text-white justify-center items-center rounded-md hover:bg-indigo-600 ">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+
+</main>
+
+<Footer />
+</body>
+</html>

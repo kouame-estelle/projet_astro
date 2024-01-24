@@ -1,0 +1,92 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		
+	</head>
+	
+	<body  class="bg-gray-100 font-sans" >
+
+		<Header title={SITE_TITLE} />
+
+		<main class="container mx-auto max-w-screen-xl pt-20">
+			<div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 ">
+				<div class="isolate transition-all "> 
+					<div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+						<div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+					  </div>
+					<img src="phone1.png" alt="" class="max-w-2/3 mb-4 rounded-lg tilted-image isolate hover:scale-110 " width="300" height="400" >
+		
+				</div>
+				<div class="flex flex-col justify-center items-center animate-fadeInLeft space-y-8 transition-all">
+					<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ml-auto ">Bienvenue dans declarez vos Pain</h1>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 ml-auto" >Découvrez une nouvelle application mobile qui vous permet de faire des rencontres amoureuses et d'avoir un œil sur votre pain à tout moment.</p>
+				</div>
+				
+			</div>
+			<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 pt-20">
+				<div class="flex flex-col justify-center items-center animate-fadeInLeft space-y-8 ">
+					<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 mr-auto">Trouvez des partenaires qui vous correspondent facilement.</h1>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 mr-auto ">Suivez vos pains en toute sécurité afin de voir réellement avec quelle genre de personne vous êtes.</p>
+				  </div>
+			  <div class=" ">
+				<div class="flex items-center mb-4 p-x-16 sm:space-x-16  hover:bg-purple-100  hover:shadow-md  hover:border border-indigo-700  hover:rounded-lg">
+				  <div class="w-16 h-16 bg-indigo-700 rounded-full space-x-16  flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 ">
+					<svg class="w-12 h-12 text-white animate-spin dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 12 2 2 5-5m4.5 5.3 1-.9a2 2 0 0 0 0-2.8l-1-.9a2 2 0 0 1-.6-1.4V7a2 2 0 0 0-2-2h-1.2a2 2 0 0 1-1.4-.5l-.9-1a2 2 0 0 0-2.8 0l-.9 1a2 2 0 0 1-1.4.6H7a2 2 0 0 0-2 2v1.2c0 .5-.2 1-.5 1.4l-1 .9a2 2 0 0 0 0 2.8l1 .9c.3.4.6.9.6 1.4V17a2 2 0 0 0 2 2h1.2c.5 0 1 .2 1.4.5l.9 1a2 2 0 0 0 2.8 0l.9-1a2 2 0 0 1 1.4-.6H17a2 2 0 0 0 2-2v-1.2c0-.5.2-1 .5-1.4Z"/>
+                  </svg>
+				  </div>
+				  <div>
+					<h2 class="text-1xl md:text-2xl lg:text-3xl font-bold pb-4 ml-auto">Simplicite d'utilisation</h2>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				  </div>
+				</div>
+				<div class="flex items-center mb-4 sm:space-x-16  hover:bg-indigo-700  hover:shadow-md  hover:border border-purple-100  hover:rounded-lg" >
+				  <div class="w-16 h-16 bg-purple-500  rounded-full flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 ">
+					<svg class="w-12 h-12 text-white  animate-bounce dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15h12M6 6h12m-6 12h0m-5 3h10c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1H7a1 1 0 0 0-1 1v16c0 .6.4 1 1 1Z"/>
+					  </svg>
+				  </div>
+				  <div>
+					<h2 class="text-1xl md:text-2xl lg:text-3xl font-bold pb-4 ml-auto">Fonctionnalite etendue</h2>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				  </div>
+				</div>
+				<div class="flex items-center mb-4 sm:space-x-16 hover:bg-purple-100  hover:shadow-md  hover:border border-indigo-700  hover:rounded-lg">
+				  <div class="w-16 h-16 bg-indigo-700 rounded-full flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 ">
+					<svg class="w-12 h-12 text-white animate-pulse dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z"/>
+					  </svg>
+				  </div>
+				  <div>
+					<h2 class="text-1xl md:text-2xl lg:text-3xl font-bold pb-4 ml-auto">Chat en temps reel</h2>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				  </div>
+				</div>
+			  </div>
+			</section>
+
+			
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 pt-20">
+				<div class="flex flex-col justify-center items-center animate-fadeInLeft space-y-8 text-center sm:text-left mr-auto transition-all">
+					<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mr-auto ">Communication fluide</h1>
+					<p class="text-lg md:text-xl lg:text-2xl text-black-700 mr-auto ">Garder toujours le contact avec ses proches à tout moment.</p>
+				</div>
+				<div class="isolate self-end transition-all relative ">
+						<img src="phone1.png" alt="" class="max-w-2/3 mb-4 rounded-md tilted-image ml-auto sm:center-text hover:scale-110  transform skew-x-[-20deg]"  width="300" height="400">
+				</div>
+			</div>
+			  
+			
+			
+		  </main>
+		<Footer />
+	</body>
+</html>
